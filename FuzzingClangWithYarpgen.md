@@ -211,10 +211,10 @@ that directory:
 ```
 ...
 === Build log ======================================================
-/local/home/smeijer/llvm-project/build_expensive_checks/bin/clang++  -std=c++11 -w  -fPIC -O0 -mcpu=grace -o clang_o2_driver.o -c driver.cpp
-/local/home/smeijer/llvm-project/build_expensive_checks/bin/clang++  -std=c++11 -w  -fPIC -O2 -mcpu=grace -o clang_o2_func.o -c func.cpp
+llvm-project/build_expensive_checks/bin/clang++  -std=c++11 -w  -fPIC -O0 -mcpu=grace -o clang_o2_driver.o -c driver.cpp
+llvm-project/build_expensive_checks/bin/clang++  -std=c++11 -w  -fPIC -O2 -mcpu=grace -o clang_o2_func.o -c func.cpp
 === Build err ======================================================
-clang++: /local/home/smeijer/llvm-project/llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:27779: SDValue performSignExtendInRegCombine(SDNode *, TargetLowering::DAGCombinerInfo &, SelectionDAG &): Assertion `(EltTy == MVT::i8 || EltTy == MVT::i16 || EltTy == MVT::i32) && "Sign extending from an invalid type"' failed.
+clang++: /llvm-project/llvm/lib/Target/AArch64/AArch64ISelLowering.cpp:27779: SDValue performSignExtendInRegCombine(SDNode *, TargetLowering::DAGCombinerInfo &, SelectionDAG &): Assertion `(EltTy == MVT::i8 || EltTy == MVT::i16 || EltTy == MVT::i32) && "Sign extending from an invalid type"' failed.
 PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
 Stack dump:
 ...
